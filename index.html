@@ -195,10 +195,43 @@
             overflow: hidden;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
         }
+
+        /* Map section */
+        .map-section {
+            padding: 70px 0;
+            background-color: var(--light-color);
+        }
+
+        .map-section h2 {
+            text-align: center;
+            font-size: 32px;
+            color: var(--dark-color);
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .map-section p {
+            text-align: center;
+            color: var(--gray-color);
+            margin-bottom: 35px;
+        }
+
+        .map-embed {
+            width: 100%;
+            height: 450px;
+            border: 0;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
         
         .booking-section {
             background-color: var(--light-color);
             padding: 60px 0;
+        }
+
+        .booking-form textarea {
+            width: 100%;
+            resize: vertical;
         }
         
         @media (max-width: 768px) {
@@ -227,6 +260,10 @@
             .cleancloud-iframe {
                 height: 700px;
             }
+
+            .map-embed {
+                height: 380px;
+            }
         }
         
         @media (max-width: 480px) {
@@ -253,6 +290,10 @@
             .cleancloud-iframe {
                 height: 600px;
             }
+
+            .map-embed {
+                height: 320px;
+            }
         }
     </style>
 </head>
@@ -274,7 +315,7 @@
                     <a href="#faq">FAQ</a>
                 </div>
                 
-                <a href="https://cleancloudapp.com/w/17609/book#/" class="btn book-btn" target="_blank" rel="noopener noreferrer">
+                <a href="book.html" class="btn book-btn">
                     <i class="fas fa-calendar-alt"></i> Book Now
                 </a>
                 
@@ -293,7 +334,7 @@
                 <div class="hero-content">
                     <h1>We pick up, wash, and fold your laundry.</h1>
                     <p>Professional laundry service with free pickup and delivery. Save time and get perfectly folded clothes delivered to your door.</p>
-                    <a href="https://cleancloudapp.com/w/17609/book#/" class="btn hero-btn" target="_blank" rel="noopener noreferrer">
+                    <a href="book.html" class="btn hero-btn">
                         <i class="fas fa-calendar-check"></i> Book Now
                     </a>
                 </div>
@@ -343,7 +384,7 @@
                 </div>
                 
                 <div class="steps-cta">
-                    <a href="https://cleancloudapp.com/w/17609/book#/" class="btn steps-btn" target="_blank" rel="noopener noreferrer">
+                    <a href="book.html" class="btn steps-btn">
                         <i class="fas fa-calendar-check"></i> Book Service Now
                     </a>
                 </div>
@@ -388,6 +429,22 @@
                 </div>
             </div>
         </section>
+        <section class="map-section">
+            <div class="container">
+                <h2>Visit Our Location</h2>
+                <p>1144 St. Laurent Blvd, Ottawa, ON</p>
+                <div class="map-embed-wrapper">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2800.2332615479163!2d-75.63781970000001!3d45.42479900000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0f88a5d71183%3A0x639e48403e8a0f8b!2s1144%20St.%20Laurent%20Blvd%2C%20Ottawa%2C%20ON!5e0!3m2!1sen!2sca!4v1768677819874!5m2!1sen!2sca"
+                        class="map-embed"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Laundrii Location Map"
+                    ></iframe>
+                </div>
+            </div>
+        </section>
     </section>
     <!-- Services Page -->
     <section id="services" class="page" style="display: none;">
@@ -398,7 +455,7 @@
                 <div class="hero-content">
                     <h1>Our Laundry Services</h1>
                     <p>Professional wash & fold and dry cleaning with free pickup and delivery in Ottawa & Gatineau.</p>
-                    <a href="https://cleancloudapp.com/w/17609/book#/" class="btn hero-btn" target="_blank" rel="noopener noreferrer">
+                    <a href="book.html" class="btn hero-btn">
                         <i class="fas fa-calendar-check"></i> Book Service Now
                     </a>
                 </div>
@@ -449,7 +506,7 @@
                                 <li>Professional folding</li>
                                 <li>Return in clean packaging</li>
                             </ul>
-                            <a href="https://cleancloudapp.com/w/17609/book#/" class="btn" style="margin-top: 20px; background-color: var(--primary-color);" target="_blank" rel="noopener noreferrer">
+                            <a href="book.html" class="btn" style="margin-top: 20px; background-color: var(--primary-color);">
                                 <i class="fas fa-calendar-check"></i> Book Wash & Fold
                             </a>
                         </div>
@@ -469,7 +526,7 @@
                                 <li>Wool and silk garments</li>
                                 <li>Wedding and formal wear</li>
                             </ul>
-                            <a href="https://cleancloudapp.com/w/17609/book#/" class="btn" style="margin-top: 20px; background-color: var(--primary-color);" target="_blank" rel="noopener noreferrer">
+                            <a href="book.html" class="btn" style="margin-top: 20px; background-color: var(--primary-color);">
                                 <i class="fas fa-calendar-check"></i> Book Dry Cleaning
                             </a>
                         </div>
@@ -489,7 +546,7 @@
                                 <li>Flexible scheduling</li>
                                 <li>We provide laundry bags</li>
                             </ul>
-                            <a href="https://cleancloudapp.com/w/17609/book#/" class="btn" style="margin-top: 20px; background-color: var(--primary-color);" target="_blank" rel="noopener noreferrer">
+                            <a href="book.html" class="btn" style="margin-top: 20px; background-color: var(--primary-color);">
                                 <i class="fas fa-calendar-check"></i> Schedule Pickup
                             </a>
                         </div>
@@ -535,7 +592,7 @@
                 <div class="hero-content">
                     <h1>About Laundrii</h1>
                     <p>With over 20 years in the industry, we bring expert care and dedication to every garment we handle.</p>
-                    <a href="https://cleancloudapp.com/w/17609/book#/" class="btn hero-btn" target="_blank" rel="noopener noreferrer">
+                    <a href="book.html" class="btn hero-btn">
                         <i class="fas fa-calendar-check"></i> Book Service Now
                     </a>
                 </div>
@@ -583,7 +640,7 @@
                 </div>
                 
                 <div class="steps-cta">
-                    <a href="https://cleancloudapp.com/w/17609/book#/" class="btn steps-btn" target="_blank" rel="noopener noreferrer">
+                    <a href="book.html" class="btn steps-btn">
                         <i class="fas fa-calendar-check"></i> Book with Confidence
                     </a>
                 </div>
@@ -639,7 +696,7 @@
                 <div class="hero-content">
                     <h1>Frequently Asked Questions</h1>
                     <p>Find answers to common questions about our laundry services</p>
-                    <a href="https://cleancloudapp.com/w/17609/book#/" class="btn hero-btn" target="_blank" rel="noopener noreferrer">
+                    <a href="book.html" class="btn hero-btn">
                         <i class="fas fa-calendar-check"></i> Book Service Now
                     </a>
                 </div>
@@ -753,7 +810,7 @@
                             <h3 style="color: var(--dark-color); margin-bottom: 20px;">Ready to Get Started?</h3>
                             <p>Book your first laundry service today and experience the convenience of professional laundry with free pickup and delivery.</p>
                             <div style="text-align: center; margin-top: 30px;">
-                                <a href="https://cleancloudapp.com/w/17609/book#/" class="btn" style="background-color: var(--primary-color);" target="_blank" rel="noopener noreferrer">
+                                <a href="book.html" class="btn" style="background-color: var(--primary-color);">
                                     <i class="fas fa-calendar-check"></i> Book Your First Pickup
                                 </a>
                             </div>
@@ -772,7 +829,7 @@
                 <div class="hero-content">
                     <h1>Pricing & Packages</h1>
                     <p>Affordable laundry services with transparent pricing. No hidden fees.</p>
-                    <a href="https://cleancloudapp.com/w/17609/book#/" class="btn hero-btn" target="_blank" rel="noopener noreferrer">
+                    <a href="book.html" class="btn hero-btn">
                         <i class="fas fa-calendar-check"></i> Book Service Now
                     </a>
                 </div>
@@ -801,7 +858,7 @@
                             <h3>Wash & Fold</h3>
                             <p><strong>$1.50 per pound</strong> (minimum 10 lbs)</p>
                             <p>Perfect for everyday laundry. We wash, dry, and fold your clothes.</p>
-                            <a href="https://cleancloudapp.com/w/17609/book#/" class="btn" style="margin-top: 20px; background-color: var(--primary-color);" target="_blank" rel="noopener noreferrer">
+                            <a href="book.html" class="btn" style="margin-top: 20px; background-color: var(--primary-color);">
                                 <i class="fas fa-calendar-check"></i> Book Wash & Fold
                             </a>
                         </div>
@@ -813,7 +870,7 @@
                             <h3>Dry Cleaning</h3>
                             <p><strong>From $8 per item</strong></p>
                             <p>Professional dry cleaning for suits, dresses, and delicate fabrics.</p>
-                            <a href="https://cleancloudapp.com/w/17609/book#/" class="btn" style="margin-top: 20px; background-color: var(--primary-color);" target="_blank" rel="noopener noreferrer">
+                            <a href="book.html" class="btn" style="margin-top: 20px; background-color: var(--primary-color);">
                                 <i class="fas fa-calendar-check"></i> Book Dry Cleaning
                             </a>
                         </div>
@@ -825,7 +882,7 @@
                             <h3>Free Delivery</h3>
                             <p><strong>Always free</strong> in Ottawa & Gatineau</p>
                             <p>No delivery charges ever. Free pickup and delivery for all services.</p>
-                            <a href="https://cleancloudapp.com/w/17609/book#/" class="btn" style="margin-top: 20px; background-color: var(--primary-color);" target="_blank" rel="noopener noreferrer">
+                            <a href="book.html" class="btn" style="margin-top: 20px; background-color: var(--primary-color);">
                                 <i class="fas fa-calendar-check"></i> Schedule Free Pickup
                             </a>
                         </div>
@@ -838,19 +895,18 @@
     <section id="book" class="booking-section">
         <div class="container">
             <h2>Book Your Laundry Service</h2>
-            <p class="section-subtitle">Click the button below to book your service through our CleanCloud booking system</p>
-            
+            <p class="section-subtitle">Click below to open our booking form.</p>
+
             <div style="text-align: center; margin-top: 40px;">
-                <a href="https://cleancloudapp.com/w/17609/book#/" class="btn" style="padding: 20px 40px; font-size: 18px; background-color: var(--primary-color);" target="_blank" rel="noopener noreferrer">
-                    <i class="fas fa-calendar-check"></i> Book Now on CleanCloud
+                <a href="book.html" class="btn" style="padding: 20px 40px; font-size: 18px; background-color: var(--primary-color);">
+                    <i class="fas fa-calendar-check"></i> Book Now
                 </a>
                 <p style="margin-top: 20px; color: var(--gray-color);">
-                    You will be redirected to our secure booking system
+                    Fill out the form and we will get back to you quickly.
                 </p>
             </div>
             
-            <!-- Optional: You can also embed CleanCloud directly if they provide an embed code -->
-            <!-- <iframe src="https://cleancloudapp.com/w/17609/book#/" class="cleancloud-iframe" title="CleanCloud Booking System"></iframe> -->
+            <!-- Optional: Add other booking methods here if needed -->
         </div>
     </section>
     <!-- Footer -->
@@ -896,7 +952,7 @@
                         </div>
                         <div class="contact-item">
                             <i class="fas fa-external-link-alt"></i>
-                            <a href="https://cleancloudapp.com/w/17609/book#/" target="_blank" rel="noopener noreferrer" style="color: var(--primary-color); text-decoration: none;">
+                            <a href="book.html" style="color: var(--primary-color); text-decoration: none;">
                                 <span>Book Online</span>
                             </a>
                         </div>

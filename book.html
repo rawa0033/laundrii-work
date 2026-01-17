@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laundrii | Book Now</title>
+    <meta name="description" content="Book your laundry service with Laundrii. Send your details and questions and we will reply quickly.">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-tshirt"></i>
+                    <span>Laundrii</span>
+                </a>
+
+                <div class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="index.html">Services</a>
+                    <a href="index.html">Pricing</a>
+                    <a href="index.html">About</a>
+                    <a href="index.html">FAQ</a>
+                </div>
+
+                <a href="book.html" class="btn book-btn">
+                    <i class="fas fa-calendar-alt"></i> Book Now
+                </a>
+
+                <button class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="booking-section">
+            <div class="container">
+                <h2>Book Your Laundry Service</h2>
+                <p class="section-subtitle">Send us your details and questions. We will reply quickly.</p>
+
+                <form
+                    class="booking-form"
+                    action="https://formsubmit.co/admin@laundrii.ca"
+                    method="post"
+                >
+                    <input type="hidden" name="_subject" value="New Booking Question">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="text" name="_honey" style="display:none">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="booking-name">Your Name</label>
+                            <input type="text" id="booking-name" name="name" placeholder="Full name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="booking-phone">Phone Number</label>
+                            <input type="tel" id="booking-phone" name="phone" placeholder="(613) 555-1234" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="booking-email">Email Address</label>
+                            <input type="email" id="booking-email" name="email" placeholder="you@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="booking-topic">Service Type</label>
+                            <select id="booking-topic" name="service">
+                                <option value="Wash & Fold">Wash & Fold</option>
+                                <option value="Dry Cleaning">Dry Cleaning</option>
+                                <option value="Pickup & Delivery">Pickup & Delivery</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="booking-questions">Questions</label>
+                        <textarea id="booking-questions" name="questions" rows="5" placeholder="Tell us about your laundry needs..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn submit-btn">
+                        <i class="fas fa-paper-plane"></i> Send Request
+                    </button>
+                    <p style="margin-top: 15px; color: var(--gray-color); text-align: center;">
+                        This form sends online and delivers to admin@laundrii.ca.
+                    </p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="logo">
+                        <i class="fas fa-tshirt"></i>
+                        <span>Laundrii</span>
+                    </div>
+                    <p>Professional laundry services with free pickup and delivery.</p>
+
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/share/1899LUsefY/?mibextid=wwXIfr" class="social-icon" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.instagram.com/laundriiteam?igsh=MTJpaTI1OXdrdTk5eg==" class="social-icon" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <a href="index.html">Home</a>
+                    <a href="index.html">Services</a>
+                    <a href="index.html">Pricing</a>
+                    <a href="index.html">About Us</a>
+                    <a href="index.html">FAQ</a>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>admin@laundrii.ca</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>(613) 238-8659</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-external-link-alt"></i>
+                            <a href="book.html" style="color: var(--primary-color); text-decoration: none;">
+                                <span>Book Online</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2023 Laundrii. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        menuToggle.addEventListener('click', function() {
+            navLinks.classList.toggle('show');
+        });
+    </script>
+</body>
+</html>
+
